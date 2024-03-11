@@ -60,7 +60,7 @@ export default function Page() {
                   size="icon"
                   asChild
                 >
-                  <a href={RESUME_DATA.personalWebsiteUrl}>
+                  <a href={RESUME_DATA.personalWebsiteUrl} target="_blank">
                     <GlobeIcon className="size-4" />
                   </a>
                 </Button>
@@ -73,7 +73,7 @@ export default function Page() {
                   size="icon"
                   asChild
                 >
-                  <a href={social.url}>
+                  <a href={social.url} target="_blank">
                     <social.icon className="size-4" />
                   </a>
                 </Button>
