@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { MapPinIcon, GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
@@ -25,7 +25,7 @@ export default function Page() {
               {RESUME_DATA.about}
             </p>
             <p className="max-w-md flex items-center text-pretty font-mono text-xs text-muted-foreground">
-                <GlobeIcon className="size-3" />
+                <MapPinIcon className="size-3" />
                 &nbsp;{RESUME_DATA.location}
             </p>
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
@@ -50,6 +50,18 @@ export default function Page() {
                 >
                   <a href={`tel:${RESUME_DATA.contact.tel}`}>
                     <PhoneIcon className="size-4" />
+                  </a>
+                </Button>
+              ) : null}
+              {RESUME_DATA.personalWebsiteUrl ? (
+                <Button
+                  className="size-8"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
+                  <a href={RESUME_DATA.personalWebsiteUrl}>
+                    <GlobeIcon className="size-4" />
                   </a>
                 </Button>
               ) : null}
