@@ -28,7 +28,7 @@ export const RESUME_DATA = {
     "Full Stack Engineer focused on building products with extra attention to detail",
   summary:
     "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-  avatarUrl: "",
+  avatarUrl: "https://avatars.githubusercontent.com/u/43859397?v=4",
   personalWebsiteUrl: "https://christophersung.dev",
   contact: {
     email: "christopher.y.sung@gmail.com",
@@ -67,7 +67,7 @@ export const RESUME_DATA = {
       badges: [],
       title: "Web Developer",
       logo: ClevertechLogo,
-      start: "2023",
+      start: "2022",
       end: "Present",
       description:
         "Building, styling and shipping tailored websites for a diverse array of clients. Technologies: HTML, CSS, JavaScript, TypeScript, React, NextJS, Ruby on Rails",
