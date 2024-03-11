@@ -25,9 +25,9 @@ export const RESUME_DATA = {
   location: "Sydney AU",
   locationLink: "https://www.google.com/maps/place/Sydney",
   about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
+    "",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
+    "",
   avatarUrl: "https://avatars.githubusercontent.com/u/43859397?v=4",
   personalWebsiteUrl: "https://christophersung.dev",
   contact: {
@@ -58,6 +58,12 @@ export const RESUME_DATA = {
       degree: "Bachelor of Medicine/Bachelor of Surgery (MBBS)",
       start: "2015",
       end: "2017",
+    },
+    {
+      school: "North Sydney Boys High School",
+      degree: "Higher School Certificate",
+      start: "2008",
+      end: "2013",
     },
   ],
   work: [
