@@ -69,7 +69,7 @@ export const RESUME_DATA = {
   work: [
     {
       company: "Freelance Developer",
-      link: "https://christophersung.dev",
+      link: "",
       badges: [],
       title: "Web Developer",
       logo: ClevertechLogo,
@@ -80,7 +80,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Intuition",
-      link: "https://intuitioneducation.com.au",
+      link: "",
       badges: [],
       title: "Full Stack Developer",
       logo: ParabolLogo,

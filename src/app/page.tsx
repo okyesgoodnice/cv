@@ -111,11 +111,8 @@ export default function Page() {
               <Card key={work.company}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
-                        {work.company}
-                      </a>
-
+                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">            
+                        {work.company}                      
                       <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
                           <Badge
@@ -172,7 +169,6 @@ export default function Page() {
             })}
           </div>
         </Section>
-
         <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
