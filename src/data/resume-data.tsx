@@ -34,11 +34,11 @@ export const RESUME_DATA = {
     email: "christopher.y.sung@gmail.com",
     tel: "+61402211465",
     social: [
-      {
-        name: "GitHub",
-        url: "https://github.com/okyesgoodnice",
-        icon: GitHubIcon,
-      },
+      // {
+      //   name: "GitHub",
+      //   url: "https://github.com/okyesgoodnice",
+      //   icon: GitHubIcon,
+      // },
       {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/cywsung/",
@@ -55,15 +55,9 @@ export const RESUME_DATA = {
     },
     {
       school: "Western Sydney University",
-      degree: "Bachelor of Medicine/Bachelor of Surgery (MBBS)",
+      degree: "Bachelor of Medicine/Bachelor of Surgery (discontinued)",
       start: "2015",
       end: "2017",
-    },
-    {
-      school: "North Sydney Boys High School",
-      degree: "Higher School Certificate",
-      start: "2008",
-      end: "2013",
     },
   ],
   work: [
@@ -73,10 +67,14 @@ export const RESUME_DATA = {
       badges: [],
       title: "Web Developer",
       logo: ClevertechLogo,
-      start: "2022",
+      start: "2021",
       end: "Present",
       description:
-        "Building, styling and shipping tailored websites for a diverse array of clients. Technologies: HTML, CSS, JavaScript, TypeScript, React, NextJS, Ruby on Rails",
+        "• Building, styling and shipping tailored websites for a diverse array of clients using frameworks such as Ruby on Rails and Next.js",
+      descriptiontwo:
+        "• Managing project timelines, budgets, and client communications to ensure successful project delivery and satisfaction with the final deliverables",
+      descriptionthree:
+        "• Maintained a strong commitment to ongoing learning and professional development to stay updated with the latest technologies and industry trends",
     },
     {
       company: "Intuition",
@@ -87,17 +85,40 @@ export const RESUME_DATA = {
       start: "Sep 2022",
       end: "Dec 2023",
       description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+        "• Developed a wide range of new features for Intuition’s internal Ruby on Rails web application (my-i), adding new functionality as requested by the product owner",
+      descriptiontwo:
+        "• Created new RESTful API endpoints within the my-i codebase to facilitate communication between its database and Intuition’s new public-facing website",
+      descriptionthree:
+        "• Led the development of a sophisticated form on the new public website enabling potential students/parents to schedule a callback",
+      descriptionfour:
+        "• Engineered functionalities within the form such as dynamically fetching available times/dates from the my-i API sending the user email confirmation via SendGrid including a link allowing them to edit their booking, and ensuring database interactions were handled with information security and data integrity in mind",
+      descriptionfive:
+        "• Conducted comprehensive testing and debugging to identify and rectify any issues, guaranteeing functionality and reliability across different browsers and devices",
     },
   ],
-  skills: [
-    "JavaScript",
-    "TypeScript",
-    "React/Next.js/Remix",
+  languages: [
+    "Ruby", 
+    "JavaScript", 
+    "TypeScript", 
+    "HTML", 
+    "CSS/SCSS", 
+    "SQL",
+  ],
+  frameworks: [
+    "Ruby on Rails",
+    "React", 
+    "Next.js", 
     "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
+    "Tailwind", 
+    "Bootstrap",
+  ],
+  tools: [
+    "Git", 
+    "CI/CD", 
+    "PostgreSQL", 
+    "VS Code",
+    "IntelliJ", 
+    "Figma",
   ],
   projects: [
     {

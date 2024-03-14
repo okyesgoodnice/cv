@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
+      <section className="mx-auto w-full max-w-4xl space-y-8 bg-white print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-1.5">
-            <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
+            <h1 className="text-3xl font-bold">{RESUME_DATA.name}</h1>
             <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
               {RESUME_DATA.about}
             </p>
@@ -105,6 +105,27 @@ export default function Page() {
           </p>
         </Section> */}
         <Section>
+          <h2 className="text-xl font-bold">Skills</h2>
+          <div className="flex flex-wrap gap-1">
+            <h3 className="inline-flex items-center gap-x-1 mr-3 font-semibold leading-none">Languages:</h3>
+            {RESUME_DATA.languages.map((language) => {
+              return <Badge key={language}>{language}</Badge>;
+            })}
+          </div>
+          <div className="flex flex-wrap gap-1">
+            <h3 className="inline-flex items-center gap-x-1 mr-3 font-semibold leading-none">Frameworks/Libraries:</h3>
+            {RESUME_DATA.frameworks.map((framework) => {
+              return <Badge key={framework}>{framework}</Badge>;
+            })}
+          </div>
+          <div className="flex flex-wrap gap-1">
+          <h3 className="inline-flex items-center gap-x-1 mr-3 font-semibold leading-none">Developer Tools:</h3>
+            {RESUME_DATA.tools.map((tool) => {
+              return <Badge key={tool}>{tool}</Badge>;
+            })}
+          </div>
+        </Section>
+        <Section>
           <h2 className="text-xl font-bold">Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (
@@ -136,6 +157,14 @@ export default function Page() {
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
                   {work.description}
+                  <br />
+                  {work.descriptiontwo}
+                  <br />
+                  {work.descriptionthree}
+                  <br />
+                  {work.descriptionfour}
+                  <br />
+                  {work.descriptionfive}
                 </CardContent>
               </Card>
             );
@@ -160,14 +189,6 @@ export default function Page() {
               </Card>
             );
           })}
-        </Section>
-        <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
-          </div>
         </Section>
         <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
