@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/command";
 import { Button } from "./ui/button";
 import { CommandIcon } from "lucide-react";
+import Link from 'next/link';
 
 interface Props {
   links: { url: string; title: string }[];
@@ -55,13 +56,10 @@ export const CommandMenu = ({ links }: Props) => {
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="Actions">
-            <CommandItem
-              onSelect={() => {
-                setOpen(false);
-                window.print();
-              }}
-            >
-              <span>Print</span>
+            <CommandItem>
+              <Link href="/resume.pdf">
+                <span>Print</span>
+              </Link>
             </CommandItem>
           </CommandGroup>
           <CommandGroup heading="Links">
