@@ -55,14 +55,12 @@ export const CommandMenu = ({ links }: Props) => {
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
-          <CommandGroup heading="Actions">
+          <CommandGroup heading="Links">
             <CommandItem>
-              <Link href="/resume.pdf">
-                <span>Print</span>
+              <Link href="/resume.pdf" target="_blank">
+                <span>PDF Version</span>
               </Link>
             </CommandItem>
-          </CommandGroup>
-          <CommandGroup heading="Links">
             {links.map(({ url, title }) => (
               <CommandItem
                 key={url}
