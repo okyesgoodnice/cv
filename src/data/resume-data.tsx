@@ -75,6 +75,10 @@ export const RESUME_DATA = {
         "• Managing project timelines, budgets, and client communications to ensure successful project delivery and satisfaction with the final deliverables",
       descriptionthree:
         "• Maintained a strong commitment to ongoing learning and professional development to stay updated with the latest technologies and industry trends",
+      descriptionfour:
+        "",
+      descriptionfive:
+        "",
     },
     {
       company: "Intuition",
